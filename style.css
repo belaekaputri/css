@@ -1,0 +1,18 @@
+section h1,
+article h1,
+aside h1,
+nav h1{
+font-size:25px;
+}
+/*menggunakan :is*/
+:is(section,article,aside,nav) h1{
+font-size:25px;
+}
+
+section h2,section h3,article h2, article h3, aside h2, aside h3 {
+color:red;
+}
+/* menggunakan :where */
+:where(section,article,aside) :where(h2,h3){
+color:red;
+}
