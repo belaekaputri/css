@@ -16,3 +16,15 @@ color:red;
 :where(section,article,aside) :where(h2,h3){
 color:red;
 }
+
+/*ketika input dklik maka ada shadow di bordernya? */
+input:focus-visible {
+  appearance: none; 
+  outline: none;  /*garis di dalam box */
+
+  box-shadow: 0 0 0 6px rgb(30, 144, 255, 0.65);
+}
+
+label:has(+ input:focus-visible) {
+  font-weight: bold;
+}
